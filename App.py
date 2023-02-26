@@ -9,7 +9,7 @@ url = f"http://api.crossref.org/works/{doi}"
 data_dict = getDetails.getArticleDetails(doi)
 #str = getAbstract.abst(url)
 str = TextExtractor.getText('TBI.pdf')
-for i in range(3):
+for i in range(1):
     str = Summariser.summarise(str)
 
 
