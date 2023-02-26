@@ -17,6 +17,7 @@ def generateInfographic(data_dict):
     template_name_collection = ["templatequatro", "templatecinco"]
 
     template_name = random.choice(template_name_collection)
+    #template_name = template_name_collection[1]
 
     template = template_env.get_template(template_name + ".html")
     output_text = template.render(context)

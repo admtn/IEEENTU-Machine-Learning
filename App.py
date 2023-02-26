@@ -12,6 +12,7 @@ str = TextExtractor.getText('TBI.pdf')
 for i in range(3):
     str = Summariser.summarise(str)
 
+
 print(str)
 data_dict['summary'] = str
 InfographicGenerator.generateInfographic(data_dict)
