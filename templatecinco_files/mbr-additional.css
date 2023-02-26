@@ -682,15 +682,15 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-twVPTLzgdf {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.cid-twWfy6sm8s {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #232323;
 }
-.cid-twVPTLzgdf .mbr-fallback-image.disabled {
+.cid-twWfy6sm8s .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-twVPTLzgdf .mbr-fallback-image {
+.cid-twWfy6sm8s .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -699,37 +699,38 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-twVPTLzgdf .card-wrapper {
-  padding-right: 2rem;
-}
-@media (max-width: 992px) {
-  .cid-twVPTLzgdf .card {
-    margin-bottom: 2rem!important;
-  }
-  .cid-twVPTLzgdf .card-wrapper {
-    padding: 0 1rem;
+@media (min-width: 992px) {
+  .cid-twWfy6sm8s .text-wrapper {
+    padding: 2rem;
   }
 }
-@media (max-width: 767px) {
-  .cid-twVPTLzgdf .link-wrap {
-    align-items: center;
-  }
-}
-.cid-twVPTLzgdf .image-wrapper img {
+.cid-twWfy6sm8s .image-wrapper img {
   width: 100%;
   object-fit: cover;
 }
-.cid-twVPTLzgdf .card-title,
-.cid-twVPTLzgdf .card-box {
+@media (max-width: 767px) {
+  .cid-twWfy6sm8s .image-wrapper {
+    margin-bottom: 2rem;
+  }
+}
+.cid-twWfy6sm8s .mbr-section-title {
   color: #ffffff;
 }
-.cid-twVRsxBwpe {
-  background-color: #bbbbbb;
+.cid-twWfy6sm8s .mbr-text {
+  color: #ffffff;
 }
-.cid-twVRsxBwpe .mbr-fallback-image.disabled {
+.cid-twWfy6sm8s .position {
+  color: #ffffff;
+}
+.cid-twWfudi5eK {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #e6c63b;
+}
+.cid-twWfudi5eK .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-twVRsxBwpe .mbr-fallback-image {
+.cid-twWfudi5eK .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -739,13 +740,18 @@ a {
   top: 0;
 }
 @media (max-width: 991px) {
-  .cid-twVRsxBwpe .image-wrapper {
+  .cid-twWfudi5eK .image-wrapper {
     margin-bottom: 1rem;
   }
 }
-.cid-twVRsxBwpe .row {
+.cid-twWfudi5eK .row {
   flex-direction: row-reverse;
 }
-.cid-twVRsxBwpe img {
+.cid-twWfudi5eK img {
   width: 100%;
+}
+@media (min-width: 992px) {
+  .cid-twWfudi5eK .text-wrapper {
+    padding: 2rem;
+  }
 }
