@@ -2,11 +2,14 @@ import TextExtractor
 import Summariser
 import InfographicGenerator
 import getDetails
+import getAbstract
 
-doi = "10.4183/aeb.2022.301"
+doi = "10.2196/40201"
+url = f"http://api.crossref.org/works/{doi}"
 data_dict = getDetails.getArticleDetails(doi)
-str = TextExtractor.getText('Carbonated.pdf')
-for i in range(3):
+str = getAbstract.abst(url)
+#str = TextExtractor.getText('covid.pdf')
+for i in range(1):
     str = Summariser.summarise(str)
 
 print(str)
