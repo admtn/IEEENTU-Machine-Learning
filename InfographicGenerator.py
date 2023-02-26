@@ -14,10 +14,10 @@ def generateInfographic(data_dict):
     template_loader = jinja2.FileSystemLoader('./')
     template_env = jinja2.Environment(loader=template_loader)
 
-    template = template_env.get_template("templatetres.html")
+    template = template_env.get_template("templatequatro.html")
     output_text = template.render(context)
 
-    PictureGenerator.generateImage(data_dict['title'], "templatetres_files/")
+    PictureGenerator.generateImage(data_dict['title'], "templatequatro_files/")
     # Data to encode
     data = "https://www.google.com/search?q=" + data_dict['source']
     
@@ -33,7 +33,7 @@ def generateInfographic(data_dict):
     img = qr.make_image(fill_color = 'black',
                         back_color = 'white')
     
-    img.save('templatetres_files/MyQRCode.png')
+    img.save('templatequatro_files/MyQRCode.png')
 
     with open('html_report_jinja.html', 'w', encoding="utf-8") as f:
         f.write(output_text)
