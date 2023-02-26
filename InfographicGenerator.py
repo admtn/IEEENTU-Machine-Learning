@@ -2,6 +2,7 @@
 import jinja2
 import PictureGenerator
 import qrcode
+import random
 
 def generateInfographic(data_dict):
     context = {
@@ -13,9 +14,9 @@ def generateInfographic(data_dict):
     
     template_loader = jinja2.FileSystemLoader('./')
     template_env = jinja2.Environment(loader=template_loader)
-    template_name_collection = ["templatequatro", "templarecinco"]
+    template_name_collection = ["templatequatro", "templatecinco"]
 
-    template_name = template_name_collection[0]
+    template_name = random.choice(template_name_collection)
 
     template = template_env.get_template(template_name + ".html")
     output_text = template.render(context)
