@@ -21,11 +21,14 @@ def getArticleDetails(doi):
     author = message.get("author")
     name = author[0].get('given') + '. ' + author[0].get('family')
     title = message.get('title')[0]
-    abstract = message.get("abstract")
+    date = message.get('published').get('date-parts')[0][0]
+    source = message.get('DOI')
 
     data_dict = {
         'author_name' : name,
         'title' : title,
+        'date' : date,
+        'source' : source
     }
     return data_dict
 
